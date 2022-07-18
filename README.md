@@ -1,88 +1,88 @@
-#YARN BASIC COMMANDS
+# YARN BASIC COMMANDS
 
-##GET VERSION
+## GET VERSION
 yarn -v (or --version)
 
-##GET HELP
+## GET HELP
 yarn help
 
-##CREATE PACKAGE.JSON
+## CREATE PACKAGE.JSON
 yarn init
 yarn init -y // Use defaults
 
-##SET DEFAULTS
+## SET DEFAULTS
 yarn config set init-license ISC
 
-##GET DEFAULTS
+## GET DEFAULTS
 yarn config get init-license
 
-##REMOVE DEFAULTS
+## REMOVE DEFAULTS
 yarn delete init-license
 
-##INSTALLING LOCAL PACKAGES
+## INSTALLING LOCAL PACKAGES
 yarn add lodash
 yarn add moment
 
-##INSTALL FROM PACKAGE.JSON
+## INSTALL FROM PACKAGE.JSON
 (add "gulp":"*")
 yarn install
 
-##REMOVING MODULES
+## REMOVING MODULES
 yarn remove lodash
 
-##INSTALL CERTAIN VERSIONS
+## INSTALL CERTAIN VERSIONS
 yarn add lodash@4.17.3
 
-##FIND OUTDATED VERSIONS
+## FIND OUTDATED VERSIONS
 yarn outdated lodash
 yarn outdated
 
-##UPGRADE
+## UPGRADE
 yarn upgrade lodash
 yarn upgrade
 
-##INSTALL GLOBAL MODULE (global must be put right after yarn)
+## INSTALL GLOBAL MODULE (global must be put right after yarn)
 yarn global add nodemon
 
-##FIND ROOT FOLDER
+## FIND ROOT FOLDER
 yarn global bin
 
-##REMOVE GLOBAL PACKAGES
+## REMOVE GLOBAL PACKAGES
 yarn global remove nodemon
 
-##LISTING PACKAGES
+## LISTING PACKAGES
 yarn list
 yarn list --depth=0
 yarn list --depth=1
 yarn list --pattern gulp
 
-##INSTALLING AS DEV DEPENDENCY
+## INSTALLING AS DEV DEPENDENCY
 yarn add gulp -D or --dev
 
-##REMOVE DEV DEPENDENCY
+## REMOVE DEV DEPENDENCY
 yarn remove gulp
 
 #VERIFY THAT VERSIONS MATCH LOCK FILE
 yarn check
 
-##CREATE YARN.LOCK FILE
+## CREATE YARN.LOCK FILE
 yarn import
 
-##ADD SCRIPT
+## ADD SCRIPT
 "scripts": {
     "dev": "nodemon index.js"
   },
 
-##RUN SCRIPT
+## RUN SCRIPT
 yarn run dev
 
-##GET LICENSES
+## GET LICENSES
 yarn license
 
-##CREATE GZIP ARCHIVE OF DEPENDENCIES
+## CREATE GZIP ARCHIVE OF DEPENDENCIES
 yarn pack
 yarn pack mydep
 
-##LIST GLOBAL CACHE PACKAGES
+## LIST GLOBAL CACHE PACKAGES
 yarn cache list
 yarn cache list --pattern lodash
