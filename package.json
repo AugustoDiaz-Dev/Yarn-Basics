@@ -1,0 +1,17 @@
+{
+  "name": "yarn-basics",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "ISC",
+  "scripts": {
+    "dev": "nodemon index.js"
+  },
+  "dependencies": {
+    "express": "^4.18.1",
+    "lodash": "4.17.21",
+    "moment": "^2.29.4"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}
